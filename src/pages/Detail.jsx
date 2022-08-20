@@ -62,7 +62,7 @@ const Detail = () => {
           <div className="flex md:flex-row flex-col gap-2 md:items-center items-start md:mt-20 mt-10 md:mb-0 mb-10">
             <h2 className="font-bold">Border Countries:</h2>
             <div className="flex md:flex-row gap-5 flex-wrap">
-              {countryDetail.borders.map((border,key) => {
+              {countryDetail !== null && countryDetail.borders.map((border,key) => {
                 return <div key={key} className={`font-medium ${isDark ? 'bg-dark-blue' : 'bg-white'} shadow-xl py-1 w-[70px] text-center rounded-md`}>{border}</div>
               })}
             </div>
